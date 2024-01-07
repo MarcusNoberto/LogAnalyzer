@@ -10,7 +10,7 @@ Este projeto utiliza o LogAnalyzer para processar logs e oferece uma interface w
 
     - Clone o repositório para sua máquina local:
         - Clone o repositório
-        - cd LogAnalyzer
+        - Entre na pasta LogAnalyzer
     
     Execute o seguinte comando para iniciar o sistema usando Docker Compose:
 
