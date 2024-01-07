@@ -1,12 +1,12 @@
-LogAnalyzer
+# LogAnalyzer
 
 Este projeto utiliza o LogAnalyzer para processar logs e oferece uma interface web e uma API para visualização e consulta.
 
-0) Pré-requisitos
+0) **Pré-requisitos**
 - Docker
 - Docker Compose
 
-1) Instruções para Execução
+1) **Instruções para Execução**
 
     - Clone o repositório para sua máquina local:
         - Clone o repositório
@@ -29,14 +29,14 @@ Este projeto utiliza o LogAnalyzer para processar logs e oferece uma interface w
 
         - http://127.0.0.1:8000/logs/ 
     
-2) Utilizando a API
+2) **Utilizando a API**
 
     Ao acessar a API, caso queira buscar algo, clique no botão Filters que irá abrir uma seção para você buscar, você pode buscar tanto uma data especifica, como por exemplo, todos os logs de 2022, como uma descrição especifica. Como exemplo temos: 
 
         - http://127.0.0.1:8000/logs/?search=2022
         - http://127.0.0.1:8000/logs/?search=teste
 
-3) Consultas avançadas:
+3) **Consultas avançadas**
     
     Você também pode fazer buscas por intervalo de datas, utilizando start date e end date, como o exemplo a seguir:
 
@@ -44,7 +44,7 @@ Este projeto utiliza o LogAnalyzer para processar logs e oferece uma interface w
 
     Sendo o padrão: Ano, Mês, Dia.
 
-4) Para encerrar o sistema, basta dar o seguinte comando:
+4) **Para encerrar o sistema, basta dar o seguinte comando**
     
     -  docker-compose down
 
