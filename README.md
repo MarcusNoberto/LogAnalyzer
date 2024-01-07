@@ -1,6 +1,6 @@
 # LogAnalyzer
 
-Este projeto utiliza o LogAnalyzer para processar logs e oferece uma interface web e uma API para visualização e consulta.
+## Este projeto utiliza o LogAnalyzer para processar logs e oferece uma interface web e uma API para visualização e consulta.
 
 0) **Pré-requisitos**
 - Docker
