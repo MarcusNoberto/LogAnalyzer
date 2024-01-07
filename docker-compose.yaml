@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  loganalyzer:
+    image: felipe456/loganalises:latest
+    ports:
+      - "8000:8000"

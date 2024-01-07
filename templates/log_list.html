@@ -1,0 +1,57 @@
+<!-- log_analyzer/templates/log_analyzer/log_list.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Log List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <main id="container">
+        <h1>Lista de logs</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>IP</th>
+                    <th>HORÁRIO</th>
+                    <th>MENSAGEM</th>
+                    <th>NÍVEL</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                    <tr>
+                        <td>{{ log.ip_address }}</td>
+                        <td>{{ log.timestamp }}</td>
+                        <td>{{ log.message }}</td>
+                        <td>{{ log.level }}</td>
+                        <td class="description">{{ log.description }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="pagination">
+            <span class="step-links">
+                {% if logs.has_previous %}
+                    <a href="?page=1">&laquo; primeira</a>
+                    <a href="?page={{ logs.previous_page_number }}">anterior</a>
+                {% endif %}
+                <span class="current">
+                    Página {{ logs.number }} de {{ logs.paginator.num_pages }}.
+                </span>
+                {% if logs.has_next %}
+                    <a href="?page={{ logs.next_page_number }}">próxima</a>
+                    <a href="?page={{ logs.paginator.num_pages }}">última &raquo;</a>
+                {% endif %}
+            </span>
+        </div>
+    </main>
+</body>
+</html>

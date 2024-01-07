@@ -1,0 +1,8 @@
+# Ignorar arquivos de compilação Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar arquivos SQLite
+*.sqlite3
+*.db
