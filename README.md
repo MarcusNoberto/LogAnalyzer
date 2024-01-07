@@ -22,12 +22,12 @@ Este projeto utiliza o LogAnalyzer para processar logs e oferece uma interface w
 
     Acesse a interface web em pelo link abaixo para interagir com o LogAnalyzer.
        
-        -http://127.0.0.1:8000/teste/import_logs/ 
+        - http://127.0.0.1:8000/teste/import_logs/ 
         
 
     Acesse a API pelo link abaixo para consultar os logs via API 
 
-        -http://127.0.0.1:8000/logs/ 
+        - http://127.0.0.1:8000/logs/ 
     
 2) Utilizando a API
 
